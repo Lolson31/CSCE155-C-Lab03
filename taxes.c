@@ -29,7 +29,8 @@
 
   if (agi < 0)
   {
-    printf("liar");
+    printf("liar\n");
+    return 17;
   }
   else if (0 <= agi <= 17000)
   {
