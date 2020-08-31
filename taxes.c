@@ -56,6 +56,8 @@
     tax = 102574 + (0.35 * (agi - 379150));
   }
 
+  totalTax = tax;
+
 
   printf("AGI:          $%10.2f\n", agi);
   printf("Tax:          $%10.2f\n", tax);
