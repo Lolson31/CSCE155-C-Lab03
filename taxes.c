@@ -5,8 +5,7 @@
  */
 #include <stdlib.h>
 #include <stdio.h>
-
-int main(int argc, char **argv) {
+ int main(int argc, char **argv) {
 
   double agi = 0.0;
   char c = 'N';
@@ -18,7 +17,7 @@ int main(int argc, char **argv) {
   printf("Please enter your adjusted gross income (AGI): ");
   scanf("%lf", &agi);
   //remove the "enter" endline character
-  getchar(); 
+  getchar();
 
   printf("Do you have any children? (Y) or (N)? ");
   c = getchar();
@@ -28,7 +27,35 @@ int main(int argc, char **argv) {
     scanf("%d", &numChildren);
   }
 
-  //TODO: compute the tax, child credit, and total tax here
+  if (agi < 0)
+  {
+    printf("liar");
+  }
+  else if (0 <= agi <= 17000)
+  {
+    tax = 0.10 * agi;
+  }
+  else if (17000 < agi <= 69000)
+  {
+    tax = 1700 + (0.15 * (agi - 17000));
+  }
+  else if (69000 < agi <= 139350)
+  {
+    tax = 9500 + (0.25 * (agi - 69000));
+  }
+  else if (139350 < agi <= 212300)
+  {
+    tax = 27087.5 + (0.28 * (agi - 139350));
+  }
+  else if (212300 < agi <= 379150)
+  {
+    tax = 47513.50 + (0.33 * (agi - 212300));
+  }
+  else
+  {
+    tax = 102574 + (0.35 * (agi - 379150));
+  }
+
 
   printf("AGI:          $%10.2f\n", agi);
   printf("Tax:          $%10.2f\n", tax);
