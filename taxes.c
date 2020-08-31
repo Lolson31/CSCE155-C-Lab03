@@ -27,28 +27,23 @@
     scanf("%d", &numChildren);
   }
 
-  if (agi < 0)
-  {
-    printf("liar\n");
-    return 17;
-  }
-  else if (0 <= agi <= 17000)
+  if(0 < agi <= 17000)
   {
     tax = 0.10 * agi;
   }
-  else if (17000 < agi <= 69000)
+  else if(17000 < agi <= 69000)
   {
     tax = 1700 + (0.15 * (agi - 17000));
   }
-  else if (69000 < agi <= 139350)
+  else if(69000 < agi <= 139350)
   {
     tax = 9500 + (0.25 * (agi - 69000));
   }
-  else if (139350 < agi <= 212300)
+  else if(139350 < agi <= 212300)
   {
     tax = 27087.5 + (0.28 * (agi - 139350));
   }
-  else if (212300 < agi <= 379150)
+  else if(212300 < agi <= 379150)
   {
     tax = 47513.50 + (0.33 * (agi - 212300));
   }
