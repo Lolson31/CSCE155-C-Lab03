@@ -22,9 +22,12 @@
   printf("Do you have any children? (Y) or (N)? ");
   c = getchar();
 
-  if(c == 'y' || c == 'Y') {
+  if(c == 'y' || c == 'Y')
+  {
     printf("How many children do you have? ");
     scanf("%d", &numChildren);
+
+    childCredit = numChildren * 1000;
   }
 
   if (0 < agi && agi <= 17000)
@@ -52,7 +55,11 @@
     tax = 102574 + (0.35 * (agi - 379150));
   }
 
-  totalTax = tax;
+  totalTax = tax - childCredit;
+  if (totalTax < 0)
+  {
+    totalTax = 0;
+  }
 
 
   printf("AGI:          $%10.2f\n", agi);
