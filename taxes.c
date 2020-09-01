@@ -27,23 +27,23 @@
     scanf("%d", &numChildren);
   }
 
-  if(0 < agi <= 17000)
+  if (0 < agi && agi <= 17000)
   {
     tax = 0.10 * agi;
   }
-  else if(17000 < agi <= 69000)
+  else if (17000 < agi && agi  <= 69000)
   {
     tax = 1700 + (0.15 * (agi - 17000));
   }
-  else if(69000 < agi <= 139350)
+  else if (69000 < agi && agi  <= 139350)
   {
     tax = 9500 + (0.25 * (agi - 69000));
   }
-  else if(139350 < agi <= 212300)
+  else if (139350 < agi && agi <= 212300)
   {
     tax = 27087.5 + (0.28 * (agi - 139350));
   }
-  else if(212300 < agi <= 379150)
+  else if (212300 < agi && agi <= 379150)
   {
     tax = 47513.50 + (0.33 * (agi - 212300));
   }
