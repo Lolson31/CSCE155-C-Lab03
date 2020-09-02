@@ -5,6 +5,7 @@
  */
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 
 /**
  * Returns true (1) if the given year is a leap year,
