@@ -117,9 +117,9 @@ int isLeapYear(int year)
   {
     1;
   }
-  else if (year % 100 == 0)
+  else if (year % 100 != 0)
   {
-    0;
+    1;
   }
   else if (year % 4)
   {
