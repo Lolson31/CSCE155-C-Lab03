@@ -73,7 +73,7 @@ int main(int argc, char **argv)
   else
   {
     printf("FAILED!\n");
-    numFailed = numFailed - 1;
+    numFailed = numFailed + 1;
   }
 
   year = 100;
