@@ -34,7 +34,7 @@ int main(int argc, char **argv) {
 
   switch(choice) {
     case 1:
-      printf("%f", a + b);
+      printf("%f\n", a + b);
       break;
 
     case 2:
