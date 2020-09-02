@@ -12,7 +12,8 @@
  */
 int isLeapYear(int year);
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
 
   int year;
   int numPassed = 0;
