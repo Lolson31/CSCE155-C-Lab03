@@ -1,5 +1,5 @@
 
-# CSCE 155E 
+# CSCE 155E
 ## Lab 3.0 Worksheet
 
 Name(s) and Login(s):
@@ -7,24 +7,22 @@ Name(s) and Login(s):
 
 
 1. What is the total final tax for the following scenarios?
-  
-  a) AGI: $84,932, with 2 kids
 
+  a) AGI: $84,932, with 2 kids
+      $11,483.00
 
   b) AGI: $36,420, with 4 kids
-  
-  
-  c) AGI: $225,000, with no kids
+      $613.00
 
+  c) AGI: $225,000, with no kids
+      $51,704.50
 
 2. Test your program with the following inputs and verify it works.
 
-  a) a = 2.0, b = 1024, log_a(b) = 
-  
-  
-  b) a = 2.0, b = 0.5, a^b = 
-  
-  
-  c) a = 2.0, b = 0.0, a/b = 
-  
+  a) a = 2.0, b = 1024, log_a(b) = 0.1
 
+
+  b) a = 2.0, b = 0.5, a^b = 1.414214
+
+
+  c) a = 2.0, b = 0.0, a/b = not a valid statement
