@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
   int year;
   int numPassed = 0;
   int numFailed = 0;
-  
+
   //Hard-coded ad-hoc test cases
   //Do not change these, add your own test cases
   //below.  All test cases should pass.
@@ -111,23 +111,12 @@ int main(int argc, char **argv) {
 
 int isLeapYear(int year)
 {
-  if ((year % 4) == 0)
-  {
-
-    if ((year % 400) == 0)
+    if (((year % 4) == 0) && ((year % 100 !== 0) || (year % 400 ==0)))
     {
-
-      if ((year % 100) == 0)
-      {
-        isLeapYear(year) == 0;
-      }
-      else
-      {
-        isLeapYear(year) == 1;
-      }
-
+      isLeapYear(year) = 1;
     }
-
-  }
-
+    else
+    {
+      isLeapYear(year) = 0;
+    }
 }
