@@ -1,5 +1,5 @@
 /**
- * This program determines if various years are leap 
+ * This program determines if various years are leap
  * years or not.
  *
  */
@@ -24,30 +24,39 @@ int main(int argc, char **argv) {
 
   year = 2000;
   printf("Test Case 1: year = %d: ", year);
-  if(!isLeapYear(year)) {
+  if(!isLeapYear(year))
+  {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
-  } else {
+  }
+  else
+  {
     printf("PASSED!\n");
     numPassed = numPassed + 1;
   }
 
   year = 2001;
   printf("Test Case 2: year = %d: ", year);
-  if(isLeapYear(year)) {
+  if(isLeapYear(year))
+  {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
-  } else {
+  }
+  else
+  {
     printf("PASSED!\n");
     numPassed = numPassed + 1;
   }
 
   year = 2100;
   printf("Test Case 3: year = %d: ", year);
-  if(isLeapYear(year)) {
+  if(isLeapYear(year))
+  {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
-  } else {
+  }
+  else
+  {
     printf("PASSED!\n");
     numPassed = numPassed + 1;
   }
@@ -63,7 +72,28 @@ int main(int argc, char **argv) {
   return 0;
 }
 
-int isLeapYear(int year) {
+int isLeapYear(int year)
+{
+  if ((year % 4) == 0)
+  {
+
+    if ((year % 400) == 0)
+    {
+
+      if ((year % 100) == 0)
+      {
+        isLeapYear(year) = 0;
+      }
+      else
+      {
+        isLeapYear(year) = 1;
+      }
+
+    }
+
+  }
+
+}
   //TODO: Write your logic here
   //      The year is stored in the variable year
   //      Your function should return true (1) if it represents a leap year
