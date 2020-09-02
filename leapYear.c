@@ -120,11 +120,11 @@ int isLeapYear(int year)
 
       if ((year % 100) == 0)
       {
-        isLeapYear = 0;
+        isLeapYear(year) == 0;
       }
       else
       {
-        isLeapYear = 1;
+        isLeapYear(year) == 1;
       }
 
     }
