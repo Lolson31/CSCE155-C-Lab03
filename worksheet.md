@@ -19,7 +19,7 @@ Name(s) and Login(s):
 
 2. Test your program with the following inputs and verify it works.
 
-  a) a = 2.0, b = 1024, log_a(b) = 0.1
+  a) a = 2.0, b = 1024, log_a(b) = 10
 
 
   b) a = 2.0, b = 0.5, a^b = 1.414214
