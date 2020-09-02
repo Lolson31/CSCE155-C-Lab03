@@ -39,7 +39,7 @@ int main(int argc, char **argv) {
 
     case 2:
       result = a - b;
-      printf("%f", result);
+      printf("%f\n", result);
       break;
 
     case 3:
