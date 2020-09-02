@@ -115,18 +115,18 @@ int isLeapYear(int year)
 {
   if (year % 400 == 0)
   {
-    1;
+    0;
   }
   else if (year % 100 != 0)
   {
-    1;
+    0;
   }
   else if (year % 4)
   {
-    1;
+    0;
   }
   else
   {
-    0;
+    1;
   }
 }
