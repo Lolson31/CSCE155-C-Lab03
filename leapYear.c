@@ -89,7 +89,7 @@ int main(int argc, char **argv)
     numPassed = numPassed + 1;
   }
 
-  year = 3000;
+  year = 2004;
   printf("Test case 6: year = %d: ", year);
   if(!isLeapYear(year))
   {
@@ -115,11 +115,11 @@ int isLeapYear(int year)
 {
   if (year % 4 == 0 && year %100 != 0 || year % 400 == 0)
   {
-    return 1;
+    return 0;
   }
   else
   {
-    return 0;
+    return 1;
   }
   /**
   if (year % 400 == 0)
