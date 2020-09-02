@@ -1,4 +1,7 @@
 /**
+ * Author: Luke Olson
+ * Date:   09/01/2020
+ *
  * This program determines if various years are leap
  * years or not.
  *
