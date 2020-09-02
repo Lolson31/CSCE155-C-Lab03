@@ -68,7 +68,7 @@ int main(int argc, char **argv)
   if (isLeapYear(year))
   {
     printf("PASSED!\n");
-    numFailed = numFailed + 1;
+    numFailed = numPassed + 1;
   }
   else
   {
@@ -86,7 +86,7 @@ int main(int argc, char **argv)
   else
   {
     printf("FAILED!\n");
-    numFailed = numFailed - 1;
+    numFailed = numFailed + 1;
   }
 
   year = 3000;
@@ -99,7 +99,7 @@ int main(int argc, char **argv)
   else
   {
     printf("FAILED!\n");
-    numFailed = numFailed - 1;
+    numFailed = numFailed + 1;
   }
 
   printf("\n\n");
