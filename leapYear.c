@@ -113,28 +113,17 @@ int main(int argc, char **argv)
 
 int isLeapYear(int year)
 {
-  if (year % 4 == 0)
+  if (year % 400 == 0)
   {
     1;
-    if (year % 100 == 0)
-    {
-      0;
-
-      if (year % 400 == 0)
-      {
-        1;
-      }
-      else
-      {
-        0;
-      }
-
-    }
-    else
-    {
-      1;
-    }
-
+  }
+  else if (year % 100 == 0)
+  {
+    0;
+  }
+  else if (year % 4)
+  {
+    1;
   }
   else
   {
