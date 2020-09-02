@@ -50,7 +50,7 @@ int main(int argc, char **argv) {
     case 4:
       if(b == 0)
       {
-        printf("please input a valid statement");
+        printf("please input a valid statement\n");
       }
       result = a / b;
       printf("%f\n", result);
