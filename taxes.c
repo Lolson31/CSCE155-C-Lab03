@@ -1,4 +1,7 @@
 /**
+ * Author: Luke Olson
+ * Date:   08/31/2020
+ *
  * This program computes income taxes based on adjusted
  * gross income and a child tax credit.
  *
