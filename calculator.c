@@ -74,7 +74,7 @@ int main(int argc, char **argv) {
       break;
 
     case 7:
-      result  = log_a(b);
+      result  = log(a) / log(b);
       printf("%f\n", result);
       break;
 
