@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
 
   year = 2001;
   printf("Test Case 2: year = %d: ", year);
-  if(isLeapYear(year))
+  if(!isLeapYear(year))
   {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
@@ -50,7 +50,7 @@ int main(int argc, char **argv) {
 
   year = 2100;
   printf("Test Case 3: year = %d: ", year);
-  if(isLeapYear(year))
+  if(!isLeapYear(year))
   {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
@@ -61,7 +61,44 @@ int main(int argc, char **argv) {
     numPassed = numPassed + 1;
   }
 
-  //TODO: write at least 3 more of your own test cases
+  year = 400;
+  printf("Test case 4: year = %d: ", year);
+  if (isLeapYear(year))
+  {
+    printf("PASSED!\n", );
+    numFailed = numFailed - 1;
+  }
+  else
+  {
+    printf("FAILED!\n", );
+    numFailed = numFailed - 1;
+  }
+
+  year = 100
+  printf("Test case 5: year = %d: ", year);
+  if (isLeapYear(year))
+  {
+    printf("PASSED!\n", );
+    numPassed = numPassed + 1;
+  }
+  else
+  {
+    printf("FAILED!\n", );
+    numFailed = numFailed - 1;
+  }
+
+  year = 3000;
+  printf("Test case 6: year = %d: ", year);
+  if (isLeapYear(year))
+  {
+    printf("PASSED!\n", );
+    numPassed = numPassed + 1;
+  }
+  else
+  {
+    printf("FAILED!\n", );
+    numFailed = numFailed - 1;
+  }
 
   printf("\n\n");
   printf("Summary:\n");
