@@ -65,41 +65,41 @@ int main(int argc, char **argv)
 
   year = 400;
   printf("Test case 4: year = %d: ", year);
-  if (isLeapYear(year))
-  {
-    printf("PASSED!\n");
-    numFailed = numPassed + 1;
-  }
-  else
+  if(!isLeapYear(year))
   {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
+  }
+  else
+  {
+    printf("PASSED!\n");
+    numPassed = numPassed + 1;
   }
 
   year = 100;
   printf("Test case 5: year = %d: ", year);
-  if (isLeapYear(year))
-  {
-    printf("PASSED!\n");
-    numPassed = numPassed + 1;
-  }
-  else
+  if(!isLeapYear(year))
   {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
+  }
+  else
+  {
+    printf("PASSED!\n");
+    numPassed = numPassed + 1;
   }
 
   year = 3000;
   printf("Test case 6: year = %d: ", year);
-  if (isLeapYear(year))
-  {
-    printf("PASSED!\n");
-    numPassed = numPassed + 1;
-  }
-  else
+  if(!isLeapYear(year))
   {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
+  }
+  else
+  {
+    printf("PASSED!\n");
+    numPassed = numPassed + 1;
   }
 
   printf("\n\n");
