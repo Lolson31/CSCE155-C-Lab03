@@ -74,7 +74,7 @@ int main(int argc, char **argv) {
     numFailed = numFailed - 1;
   }
 
-  year = 100
+  year = 100;
   printf("Test case 5: year = %d: ", year);
   if (isLeapYear(year))
   {
