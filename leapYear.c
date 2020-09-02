@@ -17,8 +17,7 @@ int main(int argc, char **argv) {
   int year;
   int numPassed = 0;
   int numFailed = 0;
-  bool leapYear;
-
+  
   //Hard-coded ad-hoc test cases
   //Do not change these, add your own test cases
   //below.  All test cases should pass.
